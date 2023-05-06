@@ -34,4 +34,8 @@ addTask.addEventListener('click', function(){
     checkButton.addEventListener('click', function(){
         li.classList.add('line-through');
     })
+
+    deleteButton.addEventListener('click', function(){
+        task.remove();
+    })
 });
