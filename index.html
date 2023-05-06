@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="w-screen h-screen bg-backgroundImg bg-cover bg-center backdrop-blur-sm">
+    <div id="container">
+        <div class="flex flex-col gap-2 h-screen justify-center items-center">
+        <div id="add-task-container">
+        <h1 class="text-white text-5xl font-extrabold main-heading my-5">To Do List</h1>
+        <label for="tInput"><input type="text" id="input-task" class="p-1"> <button type="submit" class="font-bold bg-white p-1 rounded-lg mx-2" id="add-task">Add task</button></label>
+        </div>
+        <div id="task-container" class="">
+
+        </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                backgroundImage: {
+                    'backgroundImg': "url('backgroundImg.jpeg')",
+                },
+                colors: {
+                    clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
